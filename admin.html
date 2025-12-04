@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="admin.js"></script>
+</head>
+<body>
+
+<h1>Admin Panel</h1>
+
+<div id="loginBox">
+  <input id="user" placeholder="Username">
+  <input id="pass" placeholder="Password" type="password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="adminPanel" style="display:none;">
+  <h2>Edit Scoreboard</h2>
+
+  <input id="team" placeholder="Nama tim">
+  <input id="score" placeholder="Score tim">
+
+  <button onclick="addScore()">Tambahkan</button>
+
+  <div id="msg"></div>
+</div>
+
+</body>
+</html>
